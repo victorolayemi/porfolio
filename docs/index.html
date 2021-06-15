@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en" data-random-animation="false" data-animation="36">
+    <head>
+
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Victor Olayemi, Web developer Nigeria, React-native Developer Nigeria, ibadan, Full stack developer Lagos" />
+        <meta name="description" content="Angular Developer Nigeria, React developer, ibadan Nigeria, React" />
+        <meta name="author" content="Victor Olayemi" />
+
+        <!--Page Title-->
+        <title>OLAYEMI - vCard / Resume/ CV</title>
+
+        <!--Plugins Css-->
+        <link rel="stylesheet" href="css/plugins.css">
+        <!--Main Styles Css-->
+        <link rel="stylesheet" href="css/style-dark.css">
+
+        <link rel="stylesheet" href="css/style-demo.css">
+
+        <!--Color Css-->
+        <link class="site-color" rel="stylesheet" href="css/blue-color.css">
+
+        <!--Modernizr Js-->
+        <script src="js/modernizr.js"></script>
+
+        <!--Favicons-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '');
+        </script>
+
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_dedf0DK0DJX4mHi0uepea');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_5smz9jk', 'template_eqo53ta', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+    </head>
+
+    <body>
+
+        <!---div class="theme-options dark">
+            <div class="toggle-btn">
+                <span><i class="fas fa-cog"></i></span>
+            </div>
+            <div class="theme-menu">
+                <div class="page-transitions">
+                    <h4>Page Animation</h4>
+                    <select class="demo-select form-control" id="anim-type">
+                        <option>Choose</option>
+                        <option value="0">Random</option>
+                    </select>
+                </div>
+                <div class="theme-color">
+                    <h4 class="mt-20">Colors</h4>
+                    <ul>
+                        <li><a href="css/blue-color.css" style="background-color: #00A3E1;;"></a></li>
+                        <li><a href="css/red-color.css" style="background-color: #E82A2A;"></a></li>
+                        <li><a href="css/green-color.css" style="background-color: #6ac045;"></a></li>
+                        <li><a href="css/yellow-color.css" style="background-color: #D1A71D;"></a></li>
+                        <li><a href="css/pink-color.css" style="background-color: #FF1493;"></a></li>
+                        <li><a href="css/purple-color.css" style="background-color: #5078FF;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div--->
+
+        <!--Preloader Start-->
+        <div class="preloader">
+            <div class="loader">
+                <!--Your Name-->
+                <h4>VICTOR OLAYEMI</h4>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+        <div id="page">
+
+            <!--Header Start-->
+            <header>
+                <div class="header-content">
+
+                    <!--Mobile Header-->
+                    <div class="header-mobile">
+                        <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                        <h2>VICTOR OLAYEMI</h2>
+                    </div>
+
+                    <!--Main Header-->
+                    <div class="header-main" data-simplebar>
+                        <div class="image-container">
+                            <h2 class="header-name">VICTOR OLAYEMI</h2>
+                            <img src="img/profile-img.jpg" alt="profile-pic">
+                        </div>
+
+                        <!--Nav Menus-->
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="#home" class="pt-link active"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                                <!--li><a href="#about" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                                <li><a href="#resume" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li-->
+                                <li><a href="#portfolio" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                                <!--li><a href="#blog" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li-->
+                                <li><a href="#contact" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-envelope"></i></span>Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <!--Nav Footer-->
+                        <div class="nav-footer">
+                            <!--Social Links-->
+                            <ul class="social">
+                                <li><a href="https://api.whatsapp.com/send?phone=2348138358981"><i class="fab fa-whatsapp-square"></i></a></li>
+
+                                <li><a href="https://github.com/victorolayemi"><i class="fab fa-github-square"></i></a></li>
+
+                                <li><a href="mailto:testimonyismine@gmail.com"><i class="fa fa-envelope-square"></i></a></li>
+                            </ul>
+                            <!--Copyright Text-->
+                            <div class="copy">
+                                <p><span id="year"></span> &copy; Victor Olayemi.<br>All Right Reserved.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <!--Header End-->
+
+
+            <!--Main Start-->
+            <div id="main" class="site-main">
+
+                <!--Banner Section Start-->
+                <section id="home" class="banner-section pt-page" style="background-image: url('img/background/home-bg.jpg')">
+
+                    <div class="banner-content">
+                        <!--Banner Text-->
+                        <h1 class="mb-20">VICTOR <span>OLAYEMI</span></h1>
+
+                        <!--Animated Text-->
+                        <p class="cd-headline clip is-full-width">
+                        <span>I am a </span>
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">Full-Stack Web Developer</b>
+                            <b>Mobile Developer</b>
+                            <b>Machine Learning/AI Engineer</b>
+                            <b>Freelancer</b>
+                        </span>
+                        </p>
+
+                    </div>
+
+                </section>
+                <!--Banner Section End-->
+
+
+                <!--About Section Start>
+                <section id="about" class="about-section pt-page">
+                    <div class="section-container">
+                        <div class="page-heading">
+                            <span class="icon"><i class="lnr lnr-user"></i></span>
+                            <h2>About Me.</h2>
+                        </div>
+
+                        <div class="row about mb-70">
+
+                            <div class="col-lg-8">
+                                <h3 class="mb-20">Full Stack Developer & Data Science/Machine Learning Engineer</h3>
+                                <p>Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum</p>
+                                <p>Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?</p>
+
+                                <div class="signature mt-20">
+                                    <img src="img/signature-white.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="about-info">
+                                    <h3 class="mb-20">Personal Information</h3>
+                                    <ul>
+                                        <li><span class="title">Name</span><span class="value">VICTOR OLAYEMI</span></li>
+                                        <li><span class="title">Residence</span><span class="value">Ibadan, Nigeria</span></li>
+                                        <li><span class="title">Address</span><span class="value">International Institute of Tropical Agriculture</span></li>
+                                        <li><span class="title">Email</span><span class="value">testimonyismine@gmail.com</span></li>
+                                        <li><span class="title">Phone</span><span class="value">(+234) 813 835 8981</span></li>
+                                        <li><span class="title">Freelance</span><span class="value">Available</span></li>
+                                    </ul>
+                                    <div class="resume-button mt-30">
+                                        <a class="btn-main" href="#">Download Resume</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row services mb-30">
+                            <div class="col-md-12">
+                                <div class="subheading">
+                                    <h3>Services</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-laptop"></i></div>
+                                    <h4>Web Development</h4>
+                                    <p>We provide expert web application development and web design services to clients. We offers a variety of website design and development services, from creating mobile web development solutions and responsive website designs, to building custom e-commerce experiences using the latest and proven web technologies.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-tablet"></i></div>
+                                    <h4>Mobile APP Development</h4>
+                                    <p>Our mobile application development services enable you to realise your mobile app ideas into feature-rich user experiences. We provide bespoke mobile app development services for both iOS and Android platforms irrespective of the device type (phone or tablet).</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-laptop-phone"></i></div>
+                                    <h4>Machine Learning/ Deep Learning</h4>
+                                    <p>Our services in Artificial Intelligence & Machine Learning help organizations build highly-customized solutions running on advanced machine learning algorithms, We also help companies integrate these algorithms with image and classification and recognition</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="service-item">
+                                    <div class="icon"><i class="lnr lnr-magnifier"></i></div>
+                                    <h4>SEO</h4>
+                                    <p>We understands that every business is unique. That’s why Our SEO services customize a digital strategy specific to your business needs. I spare no resources to ensure your website is optimized precisely to Google’s known variables (200 different ones and counting!).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </section>
+                <About Section Start-->
+
+
+                <!--Resume Section Start>
+                <section id="resume" class="resume-section pt-page">
+                    <div class="section-container">
+                        <div class="page-heading">
+                            <span class="icon"><i class="lnr lnr-license"></i></span>
+                            <h2>My Resume.</h2>
+                        </div>
+
+                        <div class="row mb-20">
+
+                            <div class="col-lg-6">
+                                <div class="subheading">
+                                    <h3>Experience</h3>
+                                </div>
+                                <ul class="experience">
+
+                                    <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>Lead UI Designer</h4>
+                                            <h5>Big Design Company, NY, USA</h5>
+                                            <p class="info">
+                                                Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2018</span>
+                                            <span class="from">2016</span>
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>Web Designer</h4>
+                                            <h5>Design Company, London, UK</h5>
+                                            <p class="info">
+                                                Dolor id atque accusantium ut impedit odit provident soluta voluptatem Veritatis ipsam neque mollitia vero suscipit a laborum doloremque. Ipsa!
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2016</span>
+                                            <span class="from">2015</span>
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>Web Developer</h4>
+                                            <h5>Exis Development, London, UK</h5>
+                                            <p class="info">
+                                                Consectetur pariatur fugiat ipsam aperiam maiores. Nisi in dignissimos debitis expedita asperiores delectus vitae corporis.
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2015</span>
+                                            <span class="from">2014</span>
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="subheading">
+                                    <h3>Education</h3>
+                                </div>
+
+                                <ul class="education">
+
+                                    <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>MA Graphics</h4>
+                                            <h5>Royal College of Art, London, UK</h5>
+                                            <p class="info">
+                                                Consectetur mollitia amet inventore nisi sed. Provident veritatis exercitationem eum doloremque itaque expedita? Ex voluptatem nostrum numquam illum.
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2014</span>
+                                            <span class="from">2013</span>
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>BA(HONS) Graphics</h4>
+                                            <h5>Central Saint Martins, London, UK</h5>
+                                            <p class="info">
+                                                Elit voluptatibus quas necessitatibus ullam tenetur provident voluptatibus. Ratione delectus lorem minus ipsa architecto. Saepe officiis sint adipisci.
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2013</span>
+                                            <span class="from">2012</span>
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="line-left"></span>
+                                        <div class="content">
+                                            <h4>Web & Graphics Diploma</h4>
+                                            <h5>Tech Arts Institute, CA, USA</h5>
+                                            <p class="info">
+                                            Ipsum ex exercitationem est aliquid eos saepe. Dolorum aperiam cupiditate labore vero deleniti Aut unde deserunt neque voluptas.
+                                            </p>
+                                        </div>
+                                        <span class="year">
+                                            <span class="to">2012</span>
+                                            <span class="from">2011</span>
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+
+     
+                            <div class="col-lg-6 skills">
+                                <div class="subheading">
+                                    <h3>Front-End Development Skills</h3>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">HTML5</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="83">
+                                            <div class="progress-value">98%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">CSS3</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="75">
+                                            <div class="progress-value">98%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">Angular 11+</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="92">
+                                            <div class="progress-value">95%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">ReactJs</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="92">
+                                            <div class="progress-value">92%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">Boostrap</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="92">
+                                            <div class="progress-value">95%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-lg-6 skills">
+                                <div class="subheading">
+                                    <h3>Back-End Development </h3>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">HTML5</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="83">
+                                            <div class="progress-value">98%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">CSS3</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="75">
+                                            <div class="progress-value">93%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">Javascript</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="92">
+                                            <div class="progress-value">90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                             <div class="col-lg-6 skills">
+                                <div class="subheading">
+                                    <h3>Design Skills</h3>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">inVision Studio</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="91">
+                                            <div class="progress-value">91%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">Photoshop</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="82">
+                                            <div class="progress-value">82%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4 class="progress-title">Figma</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-progress-value="94">
+                                            <div class="progress-value">60%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <Resume Section End-->
+
+
+                <!--Porfolio Section Start-->
+                <section id="portfolio" class="portfolio-section pt-page">
+                    <div class="section-container">
+
+                        <!--Page Heading-->
+                        <div class="page-heading">
+                            <span class="icon"><i class="lnr lnr-briefcase"></i></span>
+                            <h2>Portfolio.</h2>
+                        </div>
+
+                        <div class="row">
+                            <!--Portfolio Filter-->
+                            <div class="col-md-12 portfolio-filter text-center">
+                                <ul>
+                                    <li class="active" data-filter="*">All</li>
+                                    <li data-filter=".website">Websites</li>
+                                    <li data-filter=".portal">Portal</li>
+                                    <li data-filter=".webapp">Web Apps</li>
+                                    <li data-filter=".mobileapp">Mobile Apps</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Portfolio Items-->
+                        <div class="row portfolio-items mb-50">
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 brand website">
+                                <a target="_blank" href="http://hospitality.iita.org/">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-1.png" alt="">
+                                        <figcaption>
+                                            <h4>iHouse IITA</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 website">
+                                <a target="_blank" href="http://enableyouthcameroon.iita.org/">
+                                    <figure class="even" >
+                                        <img src="img/portfolio/img-2.png" alt="">
+                                        <figcaption>
+                                            <h4>Enable Youth Cameroon</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 portal website  webapp">
+                                <a target="_blank" href="https://iita.org/iita-knowledge">
+                                    <figure class="odd" >
+                                        <img src="img/portfolio/img-3.png" alt="">
+                                        <figcaption>
+                                            <h4>IITA Knowledge</h4>
+                                            <p>Web App</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 mobileapp">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.iita.org">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-mobile-1.png" alt="">
+                                        <figcaption>
+                                            <h4>IITA Knowlege</h4>
+                                            <p>Mobile APP</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                           
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 portal website webapp">
+                                <a target="_blank" href="https://admission.federalpolyekowe.edu.ng">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-5.png" alt="">
+                                        <figcaption>
+                                            <h4>Federal Polytechnic Ekowe</h4>
+                                            <p>Web Portal/Web App</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 website portal">
+                                <a target="_blank" href="https://federalpolyekowe.edu.ng">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-6.png" alt="">
+                                        <figcaption>
+                                            <h4>Federal Polytechnic Ekowe</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 brand website">
+                                <a target="_blank" href="http://bimaf.iita.org/">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-16.png" alt="">
+                                        <figcaption>
+                                            <h4>IITA BIMAF</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 mobileapp">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.newsapp.demo">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-mobile-2.png" alt="">
+                                        <figcaption>
+                                            <h4>IITA News</h4>
+                                            <p>Mobile APP</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 website">
+                                <a target="_blank" href="http://yiifswa.iita.org">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-8.png" alt="">
+                                        <figcaption>
+                                            <h4>YILFSWA</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 website">
+                                <a target="_blank" href="http://radio.iita.org/">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-9.png" alt="">
+                                        <figcaption>
+                                            <h4>Radio IITA</h4>
+                                            <p>Brand</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 website">
+                                <a target="_blank" href="http://taat-africa.org">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-10.png" alt="">
+                                        <figcaption>
+                                            <h4>TAAT Africa</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 mobileapp">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.iitaireport.org">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-mobile-3.png" alt="">
+                                        <figcaption>
+                                            <h4>IITA iReport</h4>
+                                            <p>Mobile APP</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 brand website">
+                                <a target="_blank" href="https://sulegumes.org/">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-11.png" alt="">
+                                        <figcaption>
+                                            <h4>SUL</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 brand website">
+                                <a target="_blank" href="http://forestcenter.iita.org/">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-12.png" alt="">
+                                        <figcaption>
+                                            <h4>IITA Forest Center</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 brand website">
+                                <a target="_blank" href="http://care.iita.org/">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-13.png" alt="">
+                                        <figcaption>
+                                            <h4>IITA Care</h4>
+                                            <p>brand</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 brand website">
+                                <a target="_blank" href="https://farmsquare.ng/">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-14.png" alt="">
+                                        <figcaption>
+                                            <h4>Farm Square</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 brand website">
+                                <a target="_blank" href="http://breedingbetterbananas.org/">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-15.png" alt="">
+                                        <figcaption>
+                                            <h4>Breeding Better Banana</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <!--Portfolio Item-->
+                            
+                            <div class="item col-lg-4 col-sm-6 website">
+                                <a target="_blank" href="https://elrophyhospital.com">
+                                    <figure class="even">
+                                        <img src="img/portfolio/img-7.png" alt="">
+                                        <figcaption>
+                                            <h4>El-Rophy Hospital</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                             <!--Portfolio Item-->
+                            <div class="item col-lg-4 col-sm-6 website">
+                                <a target="_blank" href="https://dynamiteinternationaltv.com/">
+                                    <figure class="odd">
+                                        <img src="img/portfolio/img-4.png" alt="">
+                                        <figcaption>
+                                            <h4>Dynamite International TV</h4>
+                                            <p>Website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!--Porfolio Section End-->
+
+
+                <!--Blog Section Start>
+                <section id="blog" class="blog-section pt-page">
+                    <div class="section-container">
+
+                        <div class="page-heading">
+                            <span class="icon"><i class="lnr lnr-book"></i></span>
+                            <h2>My Blogs.</h2>
+                        </div>
+
+                        <div class="row blogs-masonry">
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-1.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Web Design</span>
+                                        <h4 class="blog-title">Best Way to Design</h4>
+                                        <div class="blog-date">August 15, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-2.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Personal</span>
+                                        <h4 class="blog-title">Things I Need to Get Started</h4>
+                                        <div class="blog-date">August 10, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-3.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Design</span>
+                                        <h4 class="blog-title">My Current Workspace</h4>
+                                        <div class="blog-date">August 4, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-4.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Traveling</span>
+                                        <h4 class="blog-title">Best Place to Travel this Summer</h4>
+                                        <div class="blog-date">July 28, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-5.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Web Design</span>
+                                        <h4 class="blog-title">Latest UI Trends to Inspired From</h4>
+                                        <div class="blog-date">July 25, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-6.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Technology</span>
+                                        <h4 class="blog-title">Latest Tech 2018</h4>
+                                        <div class="blog-date">July 19, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-7.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">LifeStyle</span>
+                                        <h4 class="blog-title">Best & Easy To cook</h4>
+                                        <div class="blog-date">July 10, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-8.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Technology</span>
+                                        <h4 class="blog-title">Best Sound Editing Software</h4>
+                                        <div class="blog-date">July 1, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="blog-dark.html" class="blog-item">
+                                    <div class="blog-image">
+                                        <img src="img/blog/img-9.jpg" alt="#">
+                                    </div>
+                                    <div class="blog-content">
+                                        <span class="cat">Traveling</span>
+                                        <h4 class="blog-title">Top Beaches in the world</h4>
+                                        <div class="blog-date">June 24, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <Blog Section End-->
+
+
+                <!--Contact Section Start-->
+                <section id="contact" class="contact-section pt-page">
+                    <div class="section-container">
+
+                        <!--Page Heading-->
+                        <div class="page-heading">
+                            <span class="icon"><i class="lnr lnr-envelope"></i></span>
+                            <h2>Contact Me.</h2>
+                        </div>
+
+                        <!--Form Row-->
+                        <div class="row mb-70">
+                            <div class="col-lg-8  offset-lg-2">
+                                <div class="subheading">
+                                    <h3>Let's Talk</h3>
+                                </div>
+
+                                <!--Form Start-->
+                                <form id="contact-form">
+                                    <div class="row">
+
+
+                                        <!--Name Field-->
+                                        <div class="col-md-6 mb-50">
+                                            <span class="input">
+                                                <input type="hidden" name="contact_number">
+                                                <input required class="input__field cf-validate" type="text" id="cf-name" name="user_name" />
+                                                <label class="input__label" for="cf-name">Name</label>
+                                            </span>
+                                        </div>
+
+                                        <!--Email Field-->
+                                        <div class="col-md-6 mb-50">
+                                            <span class="input">
+                                                <input required class="input__field cf-validate" type="text" id="cf-email" name="user_email" />
+                                                <label class="input__label" for="cf-email">Email</label>
+                                            </span>
+                                        </div>
+
+                                        <!--Message Box-->
+                                        <div class="col-md-12 mb-30">
+                                            <span class="input">
+                                                <textarea required class="input__field cf-validate" id="cf-message" name="message" rows="5" ></textarea>
+                                                <label class="input__label" for="cf-message">How can we help you?</label>
+                                            </span>
+                                        </div>
+
+                                        <div class="alert-container col-md-12"></div>
+
+                                        <!--Submit Button-->
+                                        <div class="col-md-12 text-center">
+                                            <input id="cf-submit" class="btn-main" type="submit" value="Send">
+                                        </div>
+
+
+                                    </div>
+                                </form>
+                                <!--Form End-->
+
+                            </div>
+                        </div>
+
+                        <!--Contact Info Row Start-->
+                        <div class="row contact-info mb-70">
+
+                            <!--Contact Info Item-->
+                            <div class="col-md-4 info-item">
+                                <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                                <h5><a href="mailto:example@example.com">testimonyismine@gmail.com</a></h5>
+                            </div>
+
+                            <!--Contact Info Item-->
+                            <div class="col-md-4 info-item">
+                                <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <h5>IITA Ibadan, Nigeria</h5>
+                            </div>
+
+                            <!--Contact Info Item-->
+                            <div class="col-md-4 info-item">
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <h5>(+234) 813 835 8981</h5>
+                            </div>
+
+                        </div>
+                        <!--Contact Info Row End-->
+
+                    </div>
+                    <!--Google Map Start-->
+                    <!--div class="google-map">
+                            <div id="map" data-latitude="-37.817214" data-longitude="144.955925" data-zoom="15"></div>
+                    </div-->
+                    <!--Google Map End-->
+                </section>
+                <!--Contact Section End-->
+
+
+            </div>
+            <!--Main End-->
+
+        </div>
+
+        <!--Ajax Portfolio Container Start-->
+        <div class="ajax-portfolio-popup" data-simplebar>
+            <span class="ajax-loader"></span>
+            <div class="navigation-wrap">
+                <span class="popup-close"><i class="fas fa-times-circle"></i></span>
+            </div>
+            <div class="content-wrap">
+                <div class="popup-content"></div>
+            </div>
+        </div>
+        <!--Ajax Portfolio Container End-->
+
+        <!--Jquery JS-->
+        <script src="js/jquery.min.js"></script>
+        <!--Plugins JS-->
+        <script src="js/plugins.min.js"></script>
+        <!--Google Map Api-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxjdAabKFsk7CHhYq3VNKkwRyonhLHWDo"></script>
+        <!--Site Main JS-->
+        <script src="js/main.js"></script>
+
+        <script src="js/main-demo.js"></script>
+        <script type="text/javascript"> 
+             var d = new Date();
+              var n = d.getFullYear();
+              document.getElementById("year").innerHTML = n;
+        </script>
+
+    </body>
+
+<!-- Mirrored from OLAYEMI-vcard.netlify.com/index-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2019 10:08:09 GMT -->
+</html>
+
